@@ -194,7 +194,7 @@ Screen {
 
     function savePort(text) {
         if (text) {
-            if ( parseInt(text) >= 8000 ) {
+            if ( parseInt(text) > 8000 ) {
                 serverPort.buttonText = text.trim();
                 app.serverPort = text.trim();
                 if ( app.serverPort != oldserverport) {
@@ -314,7 +314,7 @@ Screen {
             onClicked: {
                 server.listen = false
                 oldserverport = app.serverPort
-                qkeyboard.open("Port >= 8000 ; A CHANGE WILL REBOOT TOON", serverPort.buttonText, savePort)
+                qkeyboard.open("Port > 8000 ; A CHANGE WILL REBOOT TOON", serverPort.buttonText, savePort)
             }
         }
 
@@ -352,7 +352,7 @@ Screen {
             }
         }
         
-        visible : (app.serverPort < 8000)
+        visible : (app.serverPort <= 8000)
             
     }
 
@@ -445,7 +445,7 @@ Screen {
         
         }
         
-        visible : (app.serverPort >= 8000)
+        visible : (app.serverPort > 8000)
     }
     
     

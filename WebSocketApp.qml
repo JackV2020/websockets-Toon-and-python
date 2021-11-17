@@ -87,7 +87,7 @@ App {
             log('Startup : '+e)
 
             clientServerAddress = "veraart.thehomeserver.net";
-            clientServerPort    = 8000;
+            clientServerPort    = 8001;
             serverAddress       = "0.0.0.0"
             serverPort          = 0
             

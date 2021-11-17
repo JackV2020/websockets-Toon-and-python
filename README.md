@@ -9,8 +9,8 @@ The Toon App has 1 Tile with 2 buttons.
      The client sends a message when you click the screen. 
      The message and the answer are shown on the screen.
      Every 5th message is flip.
-     This makes the webserver send the message in reverse or
-     just the way is was, after it receives flip again.
+     This makes the echo server send the message in reverse or
+     just the way it was, after it receives flip again.
 
  - 1 Button for a websocket client and server in 1 screen.<br>
      The server needs a setup action because it needs to open a firewall port
@@ -35,21 +35,21 @@ Note on Toon firewall rules :
 
 In a Toon the firewall rules are in /set/default/iptables.conf.
 In a rooted Toon there is a rule where port 22 is accepted for ssh access.
-Activating the server by entering a valid portnumber >= 8000 will put a rule just before that rule to open your port.
+Activating the server by entering a valid portnumber > 8000 will put a rule just before that rule to open your port.
 When you change your port the rule with the old port number is removed and the new one is put in place.
 Every time you change the port number your Toon has to reboot to get it activated.
 
 There are 2 python scripts which I wrote on Lubuntu.
 
  - socketechoserver.py is a server as the name says.<br> 
-    It listens on all interfaces of your computer on port 8000.<br>
+    It listens on all interfaces of your computer on port 8001.<br>
     example : ./socketechoserver.py<br>
-    (make sure your firewall allows tcp traffic through port 8000)
+    (make sure your firewall allows tcp traffic through port 8001)
         
   - socketechoclient.py is a client and takes some arguments :<br>
     -s <socket server IP> -p <socket server port> [-i <interval> like 0.5] [-o yes : for only send ]<br>
-    Suppose your Toon has address 192.168.2.123 and listens on port 8000 you may try :<br>
-    ./socketechoclient.py -s 192.168.2.123 -p 8000
+    Suppose your Toon has address 192.168.2.123 and listens on port 8001 you may try :<br>
+    ./socketechoclient.py -s 192.168.2.123 -p 8001
         
 The python scripts are written for python 3 and use some modules you may need to install.
 In case you receive errors on the imports of the modules just install them for python3 and rerun the script.

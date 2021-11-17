@@ -28,6 +28,6 @@ class SimpleEcho(WebSocket):
     def handle_close(self):
         print(self.address, 'closed')
 
-#server = WebSocketServer('192.168.2.27', 8000, SimpleEcho)
-server = WebSocketServer('0.0.0.0', 8000, SimpleEcho)
+#server = WebSocketServer('192.168.2.27', 8001, SimpleEcho)
+server = WebSocketServer('0.0.0.0', 8001, SimpleEcho)
 server.serve_forever()

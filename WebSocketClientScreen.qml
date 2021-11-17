@@ -96,7 +96,7 @@ Screen {
 
         Text {
             id: info
-            text: "veraart.thehomeserver.net runs on port 8000.\non my Toon 2. Change settings to test your own server.\nYou may use socketechoserver.py as your server.\nJust click on the screen below to test."
+            text: "veraart.thehomeserver.net runs on port 8001.\non my Toon 2. Change settings to test your own server.\nYou may use socketechoserver.py as your server.\nJust click on the screen below to test."
             anchors {
                 top             : serverIPtitle.top
                 left            : serverIP.right
