@@ -38,15 +38,15 @@ Every time you change the port number your Toon has to reboot to get it activate
 
 There are 2 python scripts which I wrote on Lubuntu.
 
- - socketechoserver.py is a server as the name says. 
-    It listens on all interfaces of your computer on port 8000.
-    example : ./socketechoserver.py
+ - socketechoserver.py is a server as the name says.<br> 
+    It listens on all interfaces of your computer on port 8000.<br>
+    example : ./socketechoserver.py<br>
     (make sure your firewall allows tcp traffic through port 8000)
         
-  - socketechoclient.py is a client and takes some arguments :
+  - socketechoclient.py is a client and takes some arguments :<br>
     -s <socket server IP> -p <socket server port> [-i <interval> like 0.5] [-o yes : for only send ]<br>
-    Suppose your Toon has address 192.168.2.123 and listens on port 8000 you may try :
-    example : ./socketechoclient.py -s 192.168.2.123 -p 8000
+    Suppose your Toon has address 192.168.2.123 and listens on port 8000 you may try :<br>
+    ./socketechoclient.py -s 192.168.2.123 -p 8000
         
 The python scripts are written for python 3 and use some modules you may need to install.
 In case you receive errors on the imports of the modules just install them for python3 and rerun the script.
