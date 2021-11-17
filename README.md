@@ -47,7 +47,7 @@ There are 2 python scripts which I wrote on Lubuntu.
     (make sure your firewall allows tcp traffic through port 8001)
         
   - socketechoclient.py is a client and takes some arguments :<br>
-    -s \<socket server IP\> -p \<socket server port\> [-i <interval> like 0.5] [-o yes : for only send ]<br>
+    -s \<socket server IP\> -p \<socket server port\> [-i \<interval\> like 0.5] [-o yes : for only send ]<br>
     Suppose your Toon has address 192.168.2.123 and listens on port 8001 you may try :<br>
     ./socketechoclient.py -s 192.168.2.123 -p 8001
         
