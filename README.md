@@ -2,7 +2,7 @@
 
 The Toon App has 1 Tile with 2 buttons. 
 
- - 1 Button for a client screen which talks to a websocket echo server. 
+ - 1 Button for a client screen which talks to a websocket echo server.<br> 
      The default server is a websocket server running on my Toon 2.
      This is reachable from the Internet so this should work out of the box.
      You can also use another server if you like. Maybe the python script below?
@@ -11,7 +11,7 @@ The Toon App has 1 Tile with 2 buttons.
      This makes the webserver send the message in reverse or
      just the way is was, after it receives flip again.
 
- - 1 Button for a websocket client and server in 1 screen.
+ - 1 Button for a websocket client and server in 1 screen.<br>
      The server needs a setup action because it needs to open a firewall port
      of your choice. After entering a port your Toon will reboot to activate
      the port and your echo server will run like my echo server.
